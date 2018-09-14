@@ -1,0 +1,14 @@
+{
+  "compilerOptions": {
+    "declaration": true,
+    "lib": ["esnext"],
+    "moduleResolution": "node",
+    "outDir": "dist",
+    "strict": true,
+    "target": "es6",
+    "types": ["jest"],
+    "typeRoots": ["node_modues/@types"]
+  },
+  "exclude": ["node_modules"],
+  "include": ["src/**/*"]
+}
