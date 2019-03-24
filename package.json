@@ -6,7 +6,10 @@
   "types": "dist/index.d.ts",
   "scripts": {
     "build": "tsc",
-    "test": "jest"
+    "fix": "eslint --fix --ext .ts .",
+    "lint": "eslint --ext .ts .",
+    "test": "jest",
+    "typecheck": "tsc -p . --noEmit"
   },
   "repository": {
     "type": "git",
@@ -24,19 +27,16 @@
   "homepage": "https://github.com/dorayakikun/template_ts#readme",
   "devDependencies": {
     "@types/jest": "^24.0.0",
+    "@typescript-eslint/eslint-plugin": "^1.5.0",
+    "@typescript-eslint/parser": "^1.5.0",
     "eslint": "^5.9.0",
     "eslint-config-prettier": "^3.3.0",
-    "eslint-config-standard": "^12.0.0",
-    "eslint-plugin-import": "^2.14.0",
-    "eslint-plugin-node": "^8.0.0",
     "eslint-plugin-prettier": "^3.0.0",
-    "eslint-plugin-promise": "^4.0.1",
-    "eslint-plugin-standard": "^4.0.0",
     "jest": "^23.6.0",
+    "jest-junit": "^6.3.0",
     "prettier": "^1.15.2",
     "ts-jest": "^23.10.4",
-    "typescript": "^3.1.6",
-    "typescript-eslint-parser": "^21.0.2"
+    "typescript": "^3.1.6"
   },
   "jest": {
     "collectCoverage": true,
